@@ -1,0 +1,11 @@
+extends base/base.pug
+
+block content
+    main
+        form.row.g-3(action="/add-user", method="POST")
+            div.col-auto
+                label Add User
+            div.col-auto
+                input(type="text", name="name")
+            div.col-auto
+                button.btn.btn-primary.mb-3(type="submit") Confirm

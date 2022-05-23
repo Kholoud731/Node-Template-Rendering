@@ -1,0 +1,14 @@
+extends base/base.pug
+
+block content
+    main
+        if users.length > 0   
+            div.grid 
+                each user in users
+                    article.card.product-item 
+                        header.card__header 
+                            h1.product__title #{user.name}
+                        .card__actions 
+                            button.btn Remove User 
+        else 
+            h1 No Users yet
